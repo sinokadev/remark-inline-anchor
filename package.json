@@ -4,7 +4,7 @@
   "description": "Remark plugin for hash-targeted inline anchors and phrase highlights",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sinokadev/remark-inline-anchor.git"
+    "url": "git+https://github.com/sinokadev/remark-inline-anchor.git"
   },
   "homepage": "https://github.com/sinokadev/remark-inline-anchor#readme",
   "bugs": {
