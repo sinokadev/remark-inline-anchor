@@ -67,14 +67,3 @@ Both options are optional. `className` is applied to every generated anchor;
 The supplied stylesheet uses `:target` and `:has()` and does not require
 JavaScript. Untargeted anchors have no visible background or spacing. The
 default scroll offset is `6rem`; override it for your site header.
-
-## Publishing
-
-Review the package name and version, then publish from this directory:
-
-```sh
-npm pack --dry-run
-npm publish --access public
-```
-
-The package is ESM-only and requires Node.js 18 or newer.
