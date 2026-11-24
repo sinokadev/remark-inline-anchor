@@ -1,5 +1,7 @@
 # remark-inline-anchor
 
+[![100% AI Slop](https://img.shields.io/badge/100%25-AI%20Slop-red)](https://github.com/sinokadev/aislop-badge)
+
 A small Remark plugin for adding fragment-addressable anchors to Markdown text.
 It supports both position markers (`{{id}}`) and phrase highlights
 (`{{id:highlighted phrase}}`).
