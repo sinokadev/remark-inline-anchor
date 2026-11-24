@@ -1,0 +1,30 @@
+{
+  "name": "remark-inline-anchor",
+  "version": "1.0.0",
+  "description": "Remark plugin for hash-targeted inline anchors and phrase highlights",
+  "type": "module",
+  "main": "./remark-inline-anchor.mjs",
+  "exports": {
+    ".": "./remark-inline-anchor.mjs",
+    "./style.css": "./inline-anchor.css"
+  },
+  "files": [
+    "remark-inline-anchor.mjs",
+    "inline-anchor.css",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": ["**/*.css"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "remark",
+    "unified",
+    "markdown",
+    "astro",
+    "anchor",
+    "highlight"
+  ],
+  "license": "MIT"
+}

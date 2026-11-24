@@ -1,0 +1,27 @@
+/* Anchors have no visible effect until they match the URL fragment. */
+.inline-anchor {
+  scroll-margin-top: 6rem;
+  transition: background-color 250ms ease, box-shadow 250ms ease;
+}
+
+/* Phrase mode: only the selected phrase is highlighted. */
+.inline-anchor--highlight:target {
+  background: color-mix(in srgb, #ffe66d 65%, transparent);
+  box-shadow: 0 0 0 0.12em color-mix(in srgb, #ffe66d 65%, transparent);
+  border-radius: 0.12em;
+}
+
+/* Position mode: highlight the containing paragraph or list item. */
+p:has(.inline-anchor:target:not(.inline-anchor--highlight)),
+li:has(.inline-anchor:target:not(.inline-anchor--highlight)) {
+  background: color-mix(in srgb, #ffe66d 35%, transparent);
+  transition: background-color 250ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inline-anchor,
+  p:has(.inline-anchor),
+  li:has(.inline-anchor) {
+    transition: none;
+  }
+}
